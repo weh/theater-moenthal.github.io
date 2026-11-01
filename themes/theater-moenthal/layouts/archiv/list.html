@@ -1,0 +1,11 @@
+{{ define "main" }}
+  <section class="archive wrap" aria-labelledby="archive-title">
+    <p class="eyebrow">Frühere Produktionen</p>
+    <h1 id="archive-title">{{ .Title }}</h1>
+    {{ with index hugo.Data "archive" }}
+      {{ with .plays }}
+        {{ partial "archive-list.html" . }}
+      {{ end }}
+    {{ end }}
+  </section>
+{{ end }}

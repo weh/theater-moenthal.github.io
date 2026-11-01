@@ -3,7 +3,7 @@
   {{ $fallback := "images/people/person.jpg" }}
   {{ $image := .image | default $fallback }}
   <article class="person-credit">
-    <img src="{{ $image | relURL }}" alt="{{ .imageAlt | default (printf "Porträt von %s" .name) }}" loading="lazy" onerror="this.onerror=null;this.src='{{ $fallback | relURL }}';">
+    <img src="{{ $image | relURL }}" alt="{{ .altImage | default .name }}" loading="lazy" onerror="this.onerror=null;this.src='{{ $fallback | relURL }}';">
     <div>
       <h3>{{ .name }}</h3>
       {{ with $.credit.role }}

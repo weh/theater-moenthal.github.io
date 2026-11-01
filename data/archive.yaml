@@ -25,11 +25,10 @@ plays:
           - person: luki-maerkli
             role: xx
 
-  - year: 2024
-    title: Die Physiker
-    subtitle: Eine Komödie in zwei Akten
-    author: Friedrich Dürrenmatt
-    status: Ausverkauft
+  - year: 2023
+    title: Hesch en Vogel?
+    subtitle: Komödie in drei Akten
+    author: Atréju Diener
     credits:
       - heading: Hinter der Bühne
         entries:
@@ -38,10 +37,13 @@ plays:
           - person: dieter-bielmann
             role: Souffleur
 
-  - year: 2023
-    title: Alles uf Chrankeschii
-    subtitle: Ein turbulenter Schwank in Schweizer Mundart
-    status: Publikumsliebling
+  - year: 2019
+    title: Und das am Hochziitsmorge
+    subtitle: Komödie in drei Akten
+    authors:
+      - Ray Cooney
+      - John Chapman
+      - Peter Waber
     credits:
       - heading: Hinter der Bühne
         entries:
@@ -49,3 +51,118 @@ plays:
             role: Regie
           - person: dieter-bielmann
             role: Souffleur
+
+  - year: 2017
+    title: Charly's Tante
+    subtitle: Schwank in zwei Akten
+    authors:
+      - Brandon Thomas
+      - Hans Gmür
+    credits:
+      - heading: Hinter der Bühne
+        entries:
+          - person: joerg-birrfelder
+            role: Regie
+          - person: dieter-bielmann
+            role: Souffleur
+
+  - year: 2015
+    title: Verruckts Gäld
+    subtitle: Lustspiel in drei Akten
+    authors:
+      - Ray Cooney
+      - Rico Spring
+
+  - year: 2014
+    title: Seitensprung ins Paradies
+    subtitle: Lustspiel in vier Akten
+    authors:
+      - Franz Arnold
+      - Ernst Bach
+      - Hans Gmür
+
+  - year: 2013
+    title: De Chef weiss vo nüüt
+    subtitle: Lustspiel in drei Akten
+    authors:
+      - Corinne Gasser
+
+  - year: 2012
+    title: Bisch sicher?
+    subtitle: Komödie in drei Akten
+    authors:
+      - Rold Brunold
+      - Peter Kaufmann
+
+  - year: 2011
+    title: Room Service
+    subtitle: Farce in drei Akten
+    authors:
+      - R.E. Britting
+
+  - year: 2010
+    title: Ladysitter
+    subtitle: Komödie in drei Akten
+    authors:
+      - Bernd Spehling
+
+  - year: 2009
+    title: Architekte und anderi Vögel
+    subtitle: Komödie in drei Akten
+    authors:
+      - Beatrice Lanz
+
+  - year: 2008
+    title: Träffpunkt Kap Horn
+    subtitle: Lustspiel in drei Akten
+    authors:
+      - Fritz Wempner
+
+  - year: 2007
+    title: Pretty Belinda
+    subtitle: Komödie in drei Akten
+    authors:
+      - Bernd Spehling
+
+  - year: 2006
+    title: Sexy Sepp
+    subtitle: Komödie in drei Akten
+    authors:
+      - Hans Gmür
+
+  - year: 2005
+    title: Potz 1000 und die einti Nacht
+    subtitle: Schwank in drei Akten
+    authors:
+      - Jeanette Robia-Züger
+      - Hansueli Züger
+
+  - year: 2004
+    title: Grobe Unfueg
+    subtitle: Lustspiel in drei Akten
+    authors:
+      - Derek Benfield
+
+  - year: 2003
+    title: Horror frei Haus
+    subtitle: Komödie
+    authors:
+      - Derek Benfield
+
+  - year: 2002
+    title: Jesses Gott herr Pfarrer
+    subtitle: Lustspiel in drei Akten
+    authors:
+      - Maya Gmür
+
+  - year: 2001
+    title: Vo Rio uf Alaska
+    subtitle: Komödie in drei Akten
+    authors:
+      - Claudia Gysel
+
+  - year: 2000
+    title: S rootsidige Hösli
+    subtitle: Lustspiel in drei Akten
+    authors:
+      - Josef Zeitler

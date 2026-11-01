@@ -1,0 +1,11 @@
+<div class="archive-list">
+  {{ range . }}
+    <article class="archive-play">
+      <img src="{{ (.poster | default "images/vorhang.png") | relURL }}" alt="Plakat zu {{ .title }}" loading="lazy">
+      <div class="archive-play-caption">
+        <p>{{ .year }}</p>
+        <h3>{{ .title }}</h3>
+      </div>
+    </article>
+  {{ end }}
+</div>

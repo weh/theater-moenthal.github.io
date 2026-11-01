@@ -8,59 +8,178 @@
 #
 # Die Rolle einer Person gehört in die `credits` der jeweiligen Produktion.
 people:
+  alice-merkli:
+    name: Alice Merkli
+    image: images/people/alice-merkli.png
   alvin-frei:
     name: Alvin Frei
     image: images/people/alvin-frei.png
-    imageAlt: Alvin Frei
+  andreas-graf:
+    name: Andreas Graf
+    image: images/people/andreas-graf.png
+  andi-gobeli:
+    name: Andi Gobeli
+    image: images/people/andi-gobeli.png
+  anni-boutellier:
+    name: Anni Boutellier
+    image: images/people/anni-boutellier.png
   barbara-widmer:
     name: Barbara Widmer
     image: images/people/barbara-widmer.png
-    imageAlt: Barbara Widmer
-  brigitte-läuchli:
+  bernadette-bergamin:
+    name: Bernadette Bergamin
+    image: images/people/bernadette-bergamin.png
+  boris-beck:
+    name: Boris Beck
+    image: images/people/boris-beck.png
+  brigitte-lauechli:
     name: Brigitte Läuchli
-    image: images/people/brigitte-laeuchli.png
-    imageAlt: Brigitte Läuchli
+    image: images/people/brigitte-lauechli.png
   carmen-baumann:
     name: Carmen Baumann
     image: images/people/carmen-baumann.png
-    imageAlt: Carmen Baumann
+  cecile-vogt:
+    name: Cecilé Vogt
+    image: images/people/cecile-vogt.png
+  christian-keller:
+    name: Christain Keller
+    image: images/people/christian-keller.png
+    imageAlt: Chregi Keller
+  christoph-buehlmann:
+    name: Christoph Bühlmann
+    image: images/people/christoph-buehlmann.png
+  claudia-graf:
+    name: Claudia Graf
+    image: images/people/claudia-graf.png
+  corinne-birrfelder:
+    name: Corinne Birrfelder
+    image: images/people/corinne-birrfelder.png
+  daniela-keller:
+    name: Daniela Keller
+    image: images/people/daniela-keller.png
+  daniel-ammann:
+    name: Daniel Ammann
+    image: images/people/daniel-ammann.png
   dieter-bielmann:
     name: Dieter Bielmann
     image: images/people/dieter-bielmann.png
-    imageAlt: Dieter Bielmann
   erika-birrfelder:
     name: Erika Birrfelder
     image: images/people/erika-birrfelder.png
-    imageAlt: Erika Birrfelder
   evi-fedrizzi:
     name: Evi Fedrizzi
     image: images/people/evi-fedrizzi.png
-    imageAlt: Evi Fedrizzi
+  felicitas-grauer:
+    name: Felicitas grauer
+    image: images/people/felicitas-grauer.png
+  heidi-foroni:
+    name: Heidi Foroni
+    image: images/people/heidi-foroni.png
+  helene-braendli:
+    name: Helene Brändli
+    image: images/people/helene-braendli.png
   jana-suter:
     name: Jana Suter
     image: images/people/jana-suter.png
-    imageAlt: Jana Suter
+  jeannine-tschann:
+    name: Jeannine tschann
+    image: images/people/jeannine-tschan.png
   joerg-birrfelder:
     name: Jörg Birrfelder
     image: images/people/joerg-birrfelder.png
-    imageAlt: Jörg Birrfelder
   kaethi-keller:
     name: Käthi Keller
     image: images/people/kaethi-keller.png
-    imageAlt: Käthi Keller
-  luki-maerkli:
-    name: Luki Märkli
-    image: images/people/luki-maerkli.png
-    imageAlt: Luki Märkli
+  luki-merkli:
+    name: Luki Merkli
+    image: images/people/luki-merkli.png
+  manuela-sala:
+    name: Manuela Sala
+    image: images/people/manuela-sala.png
+  marc-kruese:
+    name: Marc Krüse
+    image: images/people/marc-kruese.png
+  marina-gutmann:
+    name: Marina Gutmann
+    image: images/people/marina-gutmann.png
+  markus-baumgartner:
+    name: Markus Baumgartner
+    image: images/people/markus-baumgartner.png
+  martin-fehlmann:
+    name: Martin Fehlmann
+    image: images/people/martin-fehlmann.png
+  mathias-refer:
+    name: Mathias Refer
+    image: images/people/mathias-refer.png
+  mauro-fedrizzi:
+    name: Mauro Fedrizzi
+    image: images/people/mauro-fedrizzi.png
+  melanie-da-silva:
+    name: Melanie da Silva
+    image: images/people/melanie-da-silva.png
+  monika-lack:
+    name: Monika Lack
+    image: images/people/monika-lack.png
+  orlando-waechter:
+    name: Orlando Wächter
+    image: images/people/orlando-waechter.png
   patrik-wehrli:
     name: Patrik Wehrli
     image: images/people/patrik-wehrli.png
-    imageAlt: Patrik Wehrli
+  peter-brack:
+    name: Peter Brack
+    image: images/people/peter-brack.png
+  priska-baumgartner:
+    name: Priska Baumgartner
+    image: images/people/priska-baumgartner.png
+  ramona-birrfelder:
+    name: Ramona Birrfelder
+    image: images/people/ramona-birrfelder.png
+  raphael-laeuchli:
+    name: Raphael Läuchli
+    image: images/people/raphael-laeuchli.png
+  renate-weibel:
+    name: Renate Weibel
+    image: images/people/renate-weibel.png
   rene-foroni:
     name: René Foroni
     image: images/people/rene-foroni.png
-    imageAlt: René Foroni
   roland-inderwildi:
     name: Roland Inderwildi
     image: images/people/roland-inderwildi.png
-    imageAlt: Roland Inderwildi
+  ruth-kruese:
+    name: Ruth Krüse
+    image: images/people/ruth-kruese.png
+  sandra-zuber:
+    name: Sandra Zuber
+    image: images/people/sandra-zuber.png
+  silvana-wyssmann:
+    name: Silvana Wyssmann
+    image: images/people/silvana-wyssmann.png
+  silvia-eberhard:
+    name: Silvia Eberhard
+    image: images/people/silvia-eberhard.png
+  simon-kalt:
+    name: Simon Kalt
+    image: images/people/simon-kalt.png
+  sonja-wehrli:
+    name: Sonja Wehrli
+    image: images/people/sonja-wehrli.png
+  stefan-brack:
+    name: Stefan Brack
+    image: images/people/stefan-brack.png
+  thomas-eichmann:
+    name: Thomas Eichmann
+    image: images/people/thomas-eichmann.png
+  thomas-gruetler:
+    name: Thomas Grütler
+    image: images/people/thomas-gruetler.png
+  vinzenz-eggermann:
+    name: Vinzenz Eggermann
+    image: images/prople/vinzenz-eggermann.png
+  yves-thuerler:
+    name: Yves Thürler
+    image: images/people/yves-thuerler.png
+  yvonne-waechter:
+    name: Yvonne Wächter
+    image: images/people/yvonne-waechter.png

@@ -18,23 +18,32 @@
         <p class="eyebrow">Unsere neue Produktion · {{ .season }}</p>
         <h1 id="current-play-title">{{ .headline }}</h1>
         <p class="intro">{{ .description }}</p>
-        <div class="hero-dates">
-          {{ range .performances }}
-            <div>
-              <strong>{{ time.Format ":date_long" .datetime }}</strong>
-              <span>{{ time.Format "15:04" .datetime }} Uhr</span>
-            </div>
-          {{ end }}
-          <div>
-            <strong>{{ .venue.name }}</strong>
-            <span>{{ .venue.address }}</span>
-            <span>{{ .venue.boxOffice }}</span>
-          </div>
-        </div>
         <a class="cta" href="{{ "reservation/" | relURL }}">Plätze reservieren <span aria-hidden="true">→</span></a>
         <span class="note">{{ .note }}</span>
       </div>
     </section>
+
+    {{ with .credits }}
+      {{ $people := (index hugo.Data "people").people | default dict }}
+      <section class="credits wrap" id="ensemble" aria-labelledby="current-ensemble-title">
+        <p class="eyebrow">Menschen auf und hinter der Bühne</p>
+        <h2 id="current-ensemble-title">Ensemble der aktuellen Produktion</h2>
+        {{ $players := where . "heading" "Spieler" }}
+        {{ $otherCredits := where . "heading" "ne" "Spieler" }}
+        {{ range (slice $players $otherCredits) }}
+        {{ range . }}
+          <div class="credit-group">
+            <h3>{{ .heading }}</h3>
+            <div class="person-grid">
+              {{ range .entries }}
+                {{ partial "person-credit.html" (dict "people" $people "credit" .) }}
+              {{ end }}
+            </div>
+          </div>
+        {{ end }}
+        {{ end }}
+      </section>
+    {{ end }}
 
     <section class="performances" aria-labelledby="performances-title">
       <div class="wrap">
@@ -78,16 +87,11 @@
       <section class="archive wrap" id="archiv" aria-labelledby="archive-title">
         <p class="eyebrow">Frühere Produktionen</p>
         <h2 id="archive-title">Archiv</h2>
-        <div class="archive-list">
-          {{ range . }}
-            <article class="archive-play">
-              <img src="{{ (.poster | default "images/vorhang.png") | relURL }}" alt="Plakat zu {{ .title }}" loading="lazy">
-              <div class="archive-play-caption">
-                <p>{{ .year }}</p>
-                <h3>{{ .title }}</h3>
-              </div>
-            </article>
-          {{ end }}
+        <div class="archive-preview">
+          {{ partial "archive-list.html" (first 2 .) }}
+          <div class="archive-footer">
+            <a class="button" href="{{ "archiv/" | relURL }}">Zum Archiv <span aria-hidden="true">→</span></a>
+          </div>
         </div>
       </section>
     {{ end }}

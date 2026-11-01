@@ -5,12 +5,14 @@ authors:
   - Enrico Maurer
 season: Januar 2027
 poster: images/vorhang.png
-headline: Vorhang auf für das Chaos.
+headline: Alles für de Pabst
 note: Mir freued üs uf eu! ↗
 description: >-
-  Eine Tür geht auf, eine Tür fällt zu – und hinter der Bühne läuft alles
-  komplett aus dem Ruder. Erlebt einen Abend voller Tempo, Verwechslungen und
-  ziemlich vieler Sardinen.
+  Seit seiner Jugend träumt Valentin Abegg davon sich der Schweizergarde anzuschliessen.
+  Nun trennt ihn nur noch ein letzter Test davon. Ob seine WG Mitbewohnerinnen Corine und Sarah
+  ihm dabei helfen, oder im Weg stehen wird sich zeigen. Seine Mutter Regula und Vater Felix,
+  fiebern jedenfalls mit, wenn auch nicht immer für das gleiche Thema. 
+  Drücken Sie mit uns die Daumen dass alles gut geht.
 # Personen werden über ihre ID aus data/people.yaml ergänzt. Eine Person kann in
 # beliebig vielen aktuellen oder archivierten Produktionen vorkommen; nur die Rolle steht hier.
 # credits:
@@ -37,7 +39,7 @@ credits:
       - person: carmen-baumann
         role:
           name: Coiffeur/Maske
-      - person: brigitte-läuchli
+      - person: brigitte-lauechli
         role:
           name: Requisiten/Bühnenbild
       - person: alvin-frei
@@ -48,7 +50,7 @@ credits:
           name: Bühnenbau
   - heading: Spieler
     entries:
-      - person: luki-maerkli
+      - person: luki-merkli
         role:
           name: Valentin Abegg
           description: Angehender Gardist der Schweizergarde
