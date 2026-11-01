@@ -23,28 +23,6 @@
       </div>
     </section>
 
-    {{ with .credits }}
-      {{ $people := (index hugo.Data "people").people | default dict }}
-      <section class="credits wrap" id="ensemble" aria-labelledby="current-ensemble-title">
-        <p class="eyebrow">Menschen auf und hinter der Bühne</p>
-        <h2 id="current-ensemble-title">Ensemble der aktuellen Produktion</h2>
-        {{ $players := where . "heading" "Spieler" }}
-        {{ $otherCredits := where . "heading" "ne" "Spieler" }}
-        {{ range (slice $players $otherCredits) }}
-        {{ range . }}
-          <div class="credit-group">
-            <h3>{{ .heading }}</h3>
-            <div class="person-grid">
-              {{ range .entries }}
-                {{ partial "person-credit.html" (dict "people" $people "credit" .) }}
-              {{ end }}
-            </div>
-          </div>
-        {{ end }}
-        {{ end }}
-      </section>
-    {{ end }}
-
     <section class="performances" aria-labelledby="performances-title">
       <div class="wrap">
         <div class="section-head">
@@ -80,19 +58,25 @@
       </div>
     </section>
 
-  {{ end }}
-
-  {{ with index hugo.Data "archive" }}
-    {{ with .plays }}
-      <section class="archive wrap" id="archiv" aria-labelledby="archive-title">
-        <p class="eyebrow">Frühere Produktionen</p>
-        <h2 id="archive-title">Archiv</h2>
-        <div class="archive-preview">
-          {{ partial "archive-list.html" (first 2 .) }}
-          <div class="archive-footer">
-            <a class="button" href="{{ "archiv/" | relURL }}">Zum Archiv <span aria-hidden="true">→</span></a>
-          </div>
-        </div>
+    {{ with .credits }}
+      {{ $people := (index hugo.Data "people").people | default dict }}
+      <section class="credits wrap" id="ensemble" aria-labelledby="current-ensemble-title">
+        <p class="eyebrow">Menschen auf und hinter der Bühne</p>
+        <h2 id="current-ensemble-title">Ensemble der aktuellen Produktion</h2>
+        {{ $players := where . "heading" "Spieler" }}
+        {{ $otherCredits := where . "heading" "ne" "Spieler" }}
+        {{ range (slice $players $otherCredits) }}
+          {{ range . }}
+            <div class="credit-group">
+              <h3>{{ .heading }}</h3>
+              <div class="person-grid">
+                {{ range .entries }}
+                  {{ partial "person-credit.html" (dict "people" $people "credit" .) }}
+                {{ end }}
+              </div>
+            </div>
+          {{ end }}
+        {{ end }}
       </section>
     {{ end }}
   {{ end }}
