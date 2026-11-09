@@ -176,6 +176,10 @@ footer { margin-top: auto; }
   flex: 0 0 auto;
   object-fit: cover;
 }
+#ensemble .person-credit {
+  width: calc(100% - 24px);
+  justify-self: center;
+}
 .person-placeholder { background: var(--gold); }
 .person-credit > div { padding: 14px 4px 0; }
 .person-credit h3 { margin: 0; font-size: 17px; }
