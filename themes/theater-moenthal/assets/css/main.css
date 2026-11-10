@@ -4,12 +4,13 @@
   --paper: #f3ebdd;
   --paper-light: #fffaf0;
   --ink: #25211e;
+  --border: #291817;
   --red: #9b2929;
   --gold: #d5a84b;
   --green: #526b59;
   --muted: #6f6257;
   --line: #5d4a3930;
-  --shadow: 0 16px 38px #32251a25;
+  --shadow: 0 16px 38px #32251a;
   --max: 1180px;
 }
 
@@ -111,7 +112,7 @@ footer { margin-top: auto; }
   box-shadow: 0 1px 2px #0002;
   transform: translateX(-50%) rotate(-3deg);
 }
-.poster { position: relative; padding: 16px; background: #291817; box-shadow: var(--shadow); transform: rotate(-1.6deg); }
+.poster { position: relative; padding: 16px; background: var(--border); box-shadow: var(--shadow); transform: rotate(-1.6deg); }
 .poster img { width: 100%; height: auto; filter: saturate(.88) contrast(1.03); }
 .poster-cap { position: absolute; right: 36px; bottom: 34px; left: 36px; padding: 21px 25px; background: #f7eeddec; text-align: center; }
 .poster-cap small { font-weight: 700; letter-spacing: .24em; text-transform: uppercase; }
@@ -160,16 +161,23 @@ footer { margin-top: auto; }
 .ensemble-page h1 { margin-bottom: 14px; }
 .ensemble-intro { max-width: 560px; margin-bottom: 38px; color: var(--muted); font-size: 18px; }
 .person-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
+#ensemble .person-grid { row-gap: 28px; }
 .person-credit {
   display: flex;
   min-width: 0;
   flex-direction: column;
-  padding: 12px 12px 22px;
-  border: 1px solid #e7dfd3;
-  background: #291817;
-  color: #fffaf0;
-  box-shadow: 0 12px 24px #32251a1c;
+  padding: 12px 12px 12px;
+  border: 2px solid var(--border);
+  background: var(--paper-light);
+  color: var(--ink);
+  box-shadow: 0 12px 24px #32251a;
 }
+.person-image-wrap {
+  position: relative;
+  width: 100%;
+  margin-inline: auto;
+}
+.person-image-wrap .tape { top: -30px; }
 .person-credit img, .person-placeholder {
   width: 100%;
   aspect-ratio: 4 / 5;
@@ -181,9 +189,9 @@ footer { margin-top: auto; }
   justify-self: center;
 }
 .person-placeholder { background: var(--gold); }
-.person-credit > div { padding: 14px 4px 0; }
+.person-credit > .person-info { padding: 14px 4px 0; }
 .person-credit h3 { margin: 0; font-size: 17px; }
-.person-credit p { margin: 2px 0 0; color: #e8cdbd; font-size: 14px; }
+.person-credit p { margin: 2px 0 0; color: var(--ink); font-size: 14px; }
 .person-credit .role-description { font-size: 12px; }
 .archive { border-top: 1px solid var(--line); }
 .archive-preview { display: grid; grid-template-columns: 2fr 1fr; gap: 24px; align-items: center; }

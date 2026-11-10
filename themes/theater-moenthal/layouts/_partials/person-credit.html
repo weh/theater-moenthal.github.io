@@ -2,9 +2,20 @@
 {{- with $person -}}
   {{ $fallback := "images/people/person.jpg" }}
   {{ $image := .image | default $fallback }}
-  <article class="person-credit">
-    <img src="{{ $image | relURL }}" alt="{{ .altImage | default .name }}" loading="lazy" onerror="this.onerror=null;this.src='{{ $fallback | relURL }}';">
-    <div>
+  {{ $widthVariation := sub (math.Floor (mul (math.Rand) 21)) 10 }}
+  {{ $tapeWidth := div (mul 122 (add 100 $widthVariation)) 100 }}
+  {{ $tapeOffset := sub (math.Floor (mul (math.Rand) 21)) 10 }}
+  {{ $tapeRotation := sub (math.Floor (mul (math.Rand) 11)) 5 }}
+  {{ $tapeBrightness := add 85 (math.Floor (mul (math.Rand) 16)) }}
+  {{ $articleRotation := sub (math.Floor (mul (math.Rand) 5)) 2 }}
+  {{ $imageOffsetX := sub (math.Floor (mul (math.Rand) 9)) 4 }}
+  {{ $imageOffsetY := sub (math.Floor (mul (math.Rand) 9)) 4 }}
+  <article class="person-credit" style="transform: rotate({{ $articleRotation }}deg);">
+    <div class="person-image-wrap">
+      <span class="tape" aria-hidden="true" style="width: {{ $tapeWidth }}px; left: calc(50% + {{ $tapeOffset }}%); filter: brightness({{ $tapeBrightness }}%); transform: translateX(-50%) rotate({{ $tapeRotation }}deg);"></span>
+      <img src="{{ $image | relURL }}" alt="{{ .altImage | default .name }}" loading="lazy" style="object-position: calc(50% + {{ $imageOffsetX }}%) calc(50% + {{ $imageOffsetY }}%);" onerror="this.onerror=null;this.src='{{ $fallback | relURL }}';">
+    </div>
+    <div class="person-info">
       <h3>{{ .name }}</h3>
       {{ with $.credit.role }}
         {{ if reflect.IsMap . }}
