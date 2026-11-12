@@ -87,6 +87,9 @@ header {
 .links .reserve:hover { border: 0; color: #fff; background: #7d2020; }
 
 main { flex: 1 0 auto; min-height: 60vh; }
+.reservation-page { padding: 110px 0 140px; }
+.reservation-message { max-width: 560px; color: var(--muted); font-size: 20px; }
+.reservation-message p { margin: 0; }
 footer { margin-top: auto; }
 .breadcrumb { padding: 35px 0 10px; color: var(--muted); font-size: 14px; }
 .breadcrumb a { font-weight: 700; }
